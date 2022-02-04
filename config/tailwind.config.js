@@ -6,7 +6,7 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     colors: {
       secondary: "#F4F2ED",
