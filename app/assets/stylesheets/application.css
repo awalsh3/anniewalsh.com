@@ -1864,9 +1864,9 @@ video {
   background-image: url('./assets/Underline1.svg');
 }
 
-.bg-underline2{
-  background-image: url('./assets/Underline2.svg');
-}
+/*.bg-underline2{
+  background-image: url('Underline2.svg');
+}*/
 
 .bg-underline3{
   background-image: url('./assets/Underline3.svg');
