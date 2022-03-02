@@ -7,21 +7,18 @@
   </div>
   <ul class="font-montserrat items-center hidden md:flex">
     <li class="mx-3 ">
-        <%= link_to "About", "https://www.linkedin.com/in/annie-walsh-b754706a/",  target: :_blank, class: "growing-underline" %>
+        <%= link_to "About", about_path, class: "growing-underline" %>
     </li>
     <li class="mx-3">
       <%= link_to "Projects", garden_path, class: "growing-underline" %>
+    </li>
+    <li class="mx-3 ">
+        <%= link_to "CV | Resume", "https://www.linkedin.com/in/annie-walsh-b754706a/",  target: :_blank, class: "growing-underline" %>
     </li>
     <li class="mx-3">
       <%= link_to "The Garden", garden_path, class: "growing-underline" %>
     </li>
   </ul>
-  <div class="font-montserrat hidden md:block">
-    <button class="mr-6">Client Login</button>
-    <button class="py-2 px-4 text-white bg-black rounded-3xl">
-      <%= link_to "Contact", "https://www.linkedin.com/in/annie-walsh-b754706a/",  target: :_blank %>
-    </button>
-  </div>
   <div id="showMenu" class="md:hidden">
     <%= image_tag 'Menu.svg', alt: "menu icon" %>
   </div>
