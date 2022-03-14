@@ -1861,23 +1861,31 @@ video {
 }
 
 .bg-underline1{
-  background-image: url('./assets/Underline1.svg');
+  background-image: url('/Underline1.svg');
 }
 
-/*.bg-underline2{
+.bg-underline2{
   background-image: url('Underline2.svg');
-}*/
+}
 
 .bg-underline3{
-  background-image: url('./assets/Underline3.svg');
+  background-image: url('Underline3.svg');
 }
 
 .bg-underline4{
-  background-image: url('./assets/Underline4.svg');
+  background-image: url('Underline4.svg');
+}
+
+.bg-highlight1{
+  background-image: url('Highlight1.svg');
+}
+
+.bg-highlight2{
+  background-image: url('Highlight2.svg');
 }
 
 .bg-highlight3{
-  background-image: url('./assets/Highlight3.svg');
+  background-image: url('Highlight3.svg');
 }
 
 .from-secondary{
