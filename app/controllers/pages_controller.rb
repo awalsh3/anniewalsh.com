@@ -10,4 +10,10 @@ class PagesController < ApplicationController
 
   def projects
   end
+
+  def now
+  end
+
+  def contact
+  end
 end
