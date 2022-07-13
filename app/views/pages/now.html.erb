@@ -1,23 +1,28 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+<div class="bg-secondary">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div class="bg-secondary pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
   <div class="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
     <div>
-      <h2 class="text-3xl tracking-tight font-extrabold text-black font-pt-serif font-normal sm:text-4xl">What I’m doing now</h2>
-      <p class="mt-3 text-xl font-montserrat font-normal sm:mt-4">"This is a now page, and if you have your own site, you should make one, too." - Derek Sivers.
-        Alongside my professional endeavors there are a few things I am personally working on in the programming world and outside of it.
-        <br>Updated July 13th, 2022 from London.</p>
+      <span class="text-3xl tracking-tight font-extrabold text-black font-pt-serif font-normal sm:text-4xl bg-underline1 bg-left-bottom
+      bg-no-repeat pb-4 bg-100%">What I’m doing now</span>
+
+      <p class="mt-3 text-xl font-montserrat font-normal sm:mt-4 pt-5">"This is a now page, and if you have your own site, you should make one, too." - Derek Sivers.
+         Alongside my professional endeavors there are a few things I am personally working on in the programming world and outside of it.</p>
+        <br>
+        <p class="text-sm font-montserrat font-normal"><em>Updated July 13th, 2022 from London.</em></p>
     </div>
-    <div class="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+    <div class="mt-5 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12 pb-20">
       <div>
         <div>
           <a href="#" class="inline-block">
@@ -82,8 +87,9 @@
           </a>
         </div>
         <div class="block mt-4">
-          <p class="mt-3 font-montserrat font-normal"> When I moved here I never expected to dance for the biggest audience (and most celebrities/royals) I’ve ever seen.
-          It was an opportunity of a lifetime to perform in the jubilee celebrations with “one of the UK’s most celebrated dance hip hop companies.” -Sky News. </p>
+          <p class="mt-3 font-montserrat font-normal">
+          It's an opportunity of a lifetime to perform in the jubilee celebrations with “one of the UK’s most celebrated dance hip hop companies.” - Sky News.
+          I never imagined I would dance for the biggest audience and most celebrities/royals I’ve ever seen. </p>
         </div>
         <div class="mt-6 flex items-center">
           <div class="flex-shrink-0">
@@ -98,7 +104,6 @@
             </p>
             <div class="flex space-x-1 text-sm font-montserrat font-normal">
               <time datetime="2020-02-12"> Performer with Boy Blue - June 5th, 2022 </time>
-
             </div>
           </div>
         </div>
@@ -114,27 +119,6 @@
     <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1 outline-white">
       <%= video_tag ['nowvideo.mp4'], controls: false, type: 'video/mp4', autoplay: :autoplay, muted: :muted, class: "w-1/2 md:w-full" %>
     </div>
-    <div class="md:flex-1 md:m-4 md:p-4 outline-double">
-      <h1 class="font-pt-serif text-5xl font-bold mb-7">
-        What am I up to right now?
-      </h1>
-      <p class="font-pt-serif font-normal mb-7">
-        Alongside my professional endeavors there are a few things I am personally working on in the programming world.
-        I like to have a wide variety of dev stuff to do so that on days where I get stuck
-        I have lesson plans lined up that require no coding!
-       </p>
-       <p class="font-pt-serif font-normal mb-7">
-        1. Front-end practice creating a friend's business site <br>
-        2. Reading <em>Dive Into Design Patterns</em> by Alexander Shvets <br>
-        3. Applying a design pattern from the aforementioned book for version 2.0 of my ap, the OA <br>
-        4. <em>MIT Intro to Computer Science Programing</em> lessons by Proffesor John Guttag <br>
+    </section>
 
-      </p>
-      <div class="font-montserrat h-20 p-2 m-2">
-       <button>
-          <%= link_to "Go back", root_path, class: "bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2" %>
-        </button>
-      </div>
-    </div>
-  </section> -->
 
