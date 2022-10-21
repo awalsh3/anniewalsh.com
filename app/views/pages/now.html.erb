@@ -20,7 +20,12 @@
       <p class="mt-3 text-xl font-montserrat font-normal sm:mt-4 pt-5">"This is a now page, and if you have your own site, you should make one, too." - Derek Sivers.
          Alongside my professional endeavors there are a few things I am personally working on in the programming world and outside of it.</p>
         <br>
-        <p class="text-sm font-montserrat font-normal"><em>Updated July 13th, 2022 from London.</em></p>
+        <p class="text-sm font-montserrat font-normal">
+          <em>Updated
+            <% time = Time.now %>
+            <%= time.strftime("%B, %Y") %>
+            from London.</em>
+        </p>
     </div>
     <div class="mt-5 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12 pb-20">
       <div>
