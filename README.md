@@ -1,6 +1,6 @@
 # README
 
-This README documents how to get annie-walsh.com up and running. It is a personal portfolio website. No db but a rails app nonethless.
+This README documents how to get annie-walsh.com up and running. It is a personal portfolio website. No db but a rails app nonethless. Built entirely in Tailwind and ruby of course. 
 
 Things I may want to cover:
 
