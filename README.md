@@ -2,7 +2,7 @@
 
 This README documents how to get annie-walsh.com up and running. It is a personal portfolio website. No db but a rails app nonethless.
 
-Things you may want to cover:
+Things I may want to cover:
 
 * Ruby version - whatever the latest is
 
