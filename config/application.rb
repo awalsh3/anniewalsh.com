@@ -13,6 +13,9 @@ module AnnieWalshCom
 
     config.assets.paths << "#{Rails.root}/app/assets/videos"
 
+    config.api_only = true
+
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
