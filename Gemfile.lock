@@ -54,6 +54,8 @@ GEM
     activerecord (7.0.1)
       activemodel (= 7.0.1)
       activesupport (= 7.0.1)
+    activerecord-nulldb-adapter (0.9.0)
+      activerecord (>= 5.2.0, < 7.1)
     activestorage (7.0.1)
       actionpack (= 7.0.1)
       activejob (= 7.0.1)
@@ -134,7 +136,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.1-x86_64-linux)
       racc (~> 1.4)
-    pg (1.3.1)
     public_suffix (4.0.6)
     puma (5.6.1)
       nio4r (~> 2.0)
@@ -221,12 +222,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-nulldb-adapter
   bootsnap
   capybara
   debug
   importmap-rails
   jbuilder
-  pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.1)
   redis (~> 4.0)
@@ -243,4 +244,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.2.32
+   2.4.8
