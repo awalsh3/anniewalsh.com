@@ -1,22 +1,151 @@
-<!-- GARDEN -->
+<br>
+<br>
+<br>
+<br>
 <section
     class="pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
     <div class="md:flex-1 md:mr-10">
       <h1 class="font-pt-serif text-5xl font-bold mb-7">
-        Coming Soon
+        Welcome to the Garden of Dance
       </h1>
-      <p class="font-pt-serif font-normal mb-7"> But not
-      <% time = Time.now %>
-      <%= time.strftime("today which is %A the %d of %B, %Y") %>
-
-      </p>
-      <div class="font-montserrat">
-       <button>
-          <%= link_to "Go back", root_path, class: "bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2" %>
-        </button>
-      </div>
+      <p class="font-pt-serif font-normal mb-7"> Dance has always been a huge part of my life. When I am not coding I am probably dancing. 
+     I am endlessly grateful for every opportunity to step onto the stage, where I truly feel alive. Here's to the moments that have shaped me, and to the dance that continues to inspire my soul. 
+     Below are some of my most memorable performances while in London.</p>
     </div>
     <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
-      <%= image_tag 'annielogo.png', alt: "annie walsh logo"%>
+      <%= image_tag 'dancer.png', alt: "annie walsh logo"%>
     </div>
   </section>
+    </div>
+  </div>
+</div>
+<div class="bg-secondary p-6 pb-12">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-4xl">
+      <h2 class="mt-2 font-montserrat text-2xl leading-8 text-gray-600">
+        Selected Performances:
+      </h2>
+      <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+        <article class="relative isolate flex flex-col gap-8 lg:flex-row">
+          <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+          <%= image_tag 'WalkWithAmal2.jpg', alt: "Walk with Amal Image", class: "absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover" %>
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+          <div>
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2021-10-24" class="font-montserrat mr-8">October 24th, 2021</time>
+              <a href="#" class="relative z-10 font-montserrat rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Trafalgar Square</a>
+            </div>
+            <div class="group relative max-w-xl">
+              <h3 class="mt-3 text-lg font-semibold font-pt-serif leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="https://www.boyblue.co.uk/news-article-the-walk-with-amal">
+                  <span class="absolute inset-0"></span>
+                  The Walk with Amal - Amal's 10th Birthday Party
+                </a>
+              </h3>
+              <p class="mt-5 font-montserrat text-sm leading-6 text-gray-600">Created by the acclaimed Handspring Puppet Company to represent all displaced children, Little Amal traveled over 8,000km, embodying the urgent message “Don’t forget about us”. 
+                I was fortunate to participate in her 10th birthday in London, where, after four weeks of rehearsal with over 50 volunteer performers, a mass dance piece was created and choreographed by Kenrick 'H2O' Sandy with music by Michael 'Mikey J' Asante. 
+                Our 20-minute performance, filled with both joyful and somber moments, concluded with interactive party games before the crowd joined us on stage in celebration.</p>
+            </div>
+            <div class="mt-6 flex border-t border-gray-900/5 pt-6">
+              <div class="relative flex items-center gap-x-4">
+                <div class="text-sm leading-6">
+                  <p class="font-montserrat text-gray-900">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                     Creative: Boy Blue <br>
+                     Producer: Good Chance Theatre
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="relative isolate flex flex-col gap-8 lg:flex-row">
+          <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+          <%= image_tag 'Jubilee.jpg', alt: "Platinum Jubilee Pagent Image of sky news", class: "absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover" %>
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+          <div>
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2021-10-24" class="font-montserrat mr-8">June 5th, 2022</time>
+              <a href="#" class="relative z-10 font-montserrat rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Buckingham Palace</a>
+            </div>
+            <div class="group relative max-w-xl">
+              <h3 class="mt-3 text-lg font-semibold font-pt-serif leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="https://www.youtube.com/live/NxWqRN0vBjQ?si=-CSzpJjy_6jbPbGG&t=5403">
+                  <span class="absolute inset-0"></span>
+                  Queen's Platinum Jubilee Pageant
+                </a>
+              </h3>
+              <p class="mt-5 font-montserrat text-sm leading-6 text-gray-600">The Platinum Jubilee of Elizabeth II was the international celebration in 2022 marking the 70th anniversary of the accession of Queen Elizabeth II. It was an opportunity of a lifetime to perform in the jubilee celebrations with “one of the UK’s most celebrated dance hip hop companies.” - Sky News. </p>
+            </div>
+            <div class="mt-6 flex border-t border-gray-900/5 pt-6">
+              <div class="relative flex items-center gap-x-4">
+                <div class="text-sm leading-6">
+                  <p class="font-montserrat text-gray-900">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Creative: Boy Blue <br>
+                      Producer: Platinum Jubilee Pageant
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="relative isolate flex flex-col gap-8 lg:flex-row">
+          <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+          <%= image_tag 'UEFA.jpg', alt: "Platinum Jubilee Pagent Image of sky news", class: "absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover" %>
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+          </div>
+          <div>
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2021-10-24" class="font-montserrat mr-8">Coming Soon</time>
+              <a href="#" class="relative z-10 font-montserrat rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Wembley Stadium</a>
+            </div>
+            <div class="group relative max-w-xl">
+              <h3 class="mt-3 text-lg font-semibold font-pt-serif leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  UEFA Champions League Final 2024
+                </a>
+              </h3>
+              <p class="mt-5 font-montserrat text-sm leading-6 text-gray-600">Borussia Dortmund faces Real Madrid in the 2024 UEFA Champions League final at London's Wembley Stadium. Performance details are top secret.</p>
+            </div>
+            <div class="mt-6 flex border-t border-gray-900/5 pt-6">
+              <div class="relative flex items-center gap-x-4">
+                <div class="text-sm leading-6">
+                  <p class="font-semibold font-montserrat text-gray-900">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      TBD
+                    </a>
+                  </p>
+                  <p class="font-montserrat text-gray-600">Dancer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-black px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="font-pt-serif mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Media Gallery</h2>
+   
+  </div>
+</div>
+
+<a href="https://s3.amazonaws.com/media.onething.org/video/Boy+Blue+-+Stage.mp4" target="_blank">
+<video autoplay loop muted playsinline id="vid" preload="auto" class="aspect-video w-full">
+  <source src="https://s3.amazonaws.com/media.onething.org/video/Boy+Blue+-+Stage.mp4" type="video/mp4" />Your browser does not support the video tag.
+</video>
+</a>
+
+
