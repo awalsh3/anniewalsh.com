@@ -1,5 +1,5 @@
 <% content_for :title, "Dance" %>
-<% content_for :description, "Annie Walsh dances in London: selected performances including Walk with Amal, the Platinum Jubilee Pageant and the UEFA Champions League Final kick-off show." %>
+<% content_for :description, "Annie Walsh dances in London: selected performances including Walk with Amal, the Platinum Jubilee Pageant and the UEFA Champions League Final kick-off show, plus teaching at Uptop Dance School." %>
 
 <header class="wrap site-header">
   <%= link_to "Annie Walsh", root_path, class: "site-header__name" %>
@@ -31,11 +31,11 @@
   </section>
 
   <section id="performances" class="wrap performances">
-    <h2 class="display h-section">Selected <span class="serif" style="color: var(--rose-deep);">performances</span></h2>
+    <h2 class="display h-section">Selected <span class="serif" style="color: var(--rose-deep);">events</span></h2>
 
     <article class="perf">
       <%= image_tag "two_worlds/amal-2.jpg", alt: "Mass dance performance for Little Amal in London", class: "perf__img" %>
-      <div class="perf__card" style="background: var(--lilac);">
+      <div class="perf__card" style="background: var(--orange);">
         <span class="eyebrow" style="font-size: 14px;">Mass dance · London</span>
         <div>
           <h3>Walk with Amal</h3>
@@ -57,12 +57,25 @@
 
     <article class="perf">
       <%= image_tag "two_worlds/uefa.jpg", alt: "Stadium performance at the UEFA Champions League Final kick-off show", class: "perf__img" %>
-      <div class="perf__card" style="background: var(--orange);">
+      <div class="perf__card" style="background: var(--lilac);">
         <span class="eyebrow" style="font-size: 14px;">Stadium · Wembley</span>
         <div>
           <h3>UCL Final Kick-Off Show</h3>
           <p>Lenny Kravitz headlined the show before the Champions League Final, with 100+ dancers supporting. I was one of them.</p>
         </div>
+      </div>
+    </article>
+
+    <article class="perf perf--flip">
+      <div class="perf__card" style="background: var(--pink);">
+        <span class="eyebrow" style="font-size: 14px;">Teaching · Weekly classes</span>
+        <div>
+          <h3>Uptop Dance School</h3>
+          <p>I taught two weekly classes, for <span style="white-space: nowrap;">4–5</span> year olds and <span style="white-space: nowrap;">6–9</span> year olds, and brought them to the stage for an end-of-year performance and a flash mob.</p>
+        </div>
+      </div>
+      <div class="perf__img" aria-hidden="true">
+       <%= image_tag "two_worlds/dance_teacher.jpg", alt: "teaching at the Uptop Dance School end of year performance", class: "perf__img" %>
       </div>
     </article>
   </section>

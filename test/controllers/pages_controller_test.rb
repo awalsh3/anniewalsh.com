@@ -11,7 +11,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   test "code page renders services and projects" do
     get code_path
     assert_response :success
-    assert_select "h1", /Websites with/
+    assert_select "h1", /The code is the/
     assert_select ".service", 3
     assert_select ".work-row", 6
   end
@@ -19,7 +19,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   test "dance page renders performances" do
     get dance_path
     assert_response :success
-    assert_select ".perf", 3
+    assert_select ".perf", 4
   end
 
   test "now page still renders" do

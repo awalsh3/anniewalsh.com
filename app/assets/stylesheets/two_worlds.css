@@ -197,6 +197,18 @@
 .tw .perf { display: flex; flex-wrap: wrap; gap: 20px; }
 .tw .perf--flip { flex-wrap: wrap-reverse; }
 .tw .perf__img { flex: 3 1 480px; min-width: 0; height: 480px; object-fit: cover; border-radius: 28px; }
+.tw .perf__visual {
+  position: relative; overflow: hidden;
+  background: var(--blue); color: var(--cream);
+  padding: 40px;
+  display: flex; flex-direction: column; justify-content: center; gap: 8px;
+}
+.tw .perf__visual-row {
+  position: relative;
+  font-weight: 800; font-stretch: 75%; letter-spacing: -0.04em;
+  font-size: clamp(72px, 9vw, 140px); line-height: 0.9;
+}
+.tw .perf__visual-row .serif { font-size: 0.45em; letter-spacing: 0; margin-right: 0.2em; }
 .tw .perf__card {
   flex: 2 1 360px; border-radius: 28px; padding: 40px;
   display: flex; flex-direction: column; justify-content: space-between; gap: 24px;
