@@ -1,67 +1,37 @@
-<!-- Hero -->
-<section
-  class="pt-40 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
-  <div class="md:flex-1 md:mr-10">
-     <h1 class="font-pt-serif text-5xl font-bold mb-7">
-        Annie Walsh <br>
-        <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
-          web developer
-        </span>
-      </h1>
-    <p class="font-pt-serif font-normal mb-7">
-     Welcome to my site! I'm a full-stack graduate of Le Wagon London, experienced in HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails.
-     <br> * Currently developing artistic experiences at Any One Thing. *
-    </p>
-    <div class="font-montserrat">
-      <%= link_to "Learn more", about_path, class: "bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2" %>
-      <%= link_to "Contact", "https://www.linkedin.com/in/annie-walsh-b754706a/", target: :_blank,  class: "px-6 py-4 border-2 border-black border-solid rounded-lg" %>
+<% content_for :description, "Annie Walsh builds websites and web apps, and dances, in London. Pick a side." %>
 
-    </div>
+<main class="split">
+  <header class="split__top">
+    <span class="site-header__name">Annie Walsh</span>
+    <span class="split__prompt">pick a side —</span>
+    <span class="eyebrow" style="letter-spacing: 0; text-transform: none; font-size: 15px;">London ✶</span>
+  </header>
+
+  <div class="split__halves">
+    <%= link_to code_path, class: "half half--code", aria: { label: "Code: websites, web apps and arts tech" } do %>
+      <span class="shape" aria-hidden="true" style="right: -80px; top: 60px; width: 360px; height: 360px; border-radius: 50%; background: var(--yellow);"></span>
+      <span class="shape shape--hide-sm" aria-hidden="true" style="right: 180px; top: 300px; width: 180px; height: 90px; border-radius: 180px 180px 0 0; background: var(--pink);"></span>
+      <span class="shape" aria-hidden="true" style="left: 40px; top: 120px; width: 120px; height: 120px; border: 3px solid var(--cream); border-radius: 24px; transform: rotate(14deg);"></span>
+
+      <span class="eyebrow">Websites · Web apps · Arts tech</span>
+      <span class="half__body">
+        <span class="half__lead">I build</span>
+        <span class="half__word">Code</span>
+        <span class="pill pill--cream half__cta">Hire me for a project →</span>
+      </span>
+    <% end %>
+
+    <%= link_to dance_path, class: "half half--dance", aria: { label: "Dance: performances in London" } do %>
+      <%= image_tag "two_worlds/amal.jpg", alt: "", class: "half__photo", aria: { hidden: true } %>
+      <span class="shape shape--hide-sm" aria-hidden="true" style="right: 290px; top: 300px; width: 140px; height: 140px; border-radius: 50%; background: var(--orange);"></span>
+      <span class="shape" aria-hidden="true" style="left: -40px; top: 210px; width: 240px; height: 40px; border-radius: 999px; background: var(--violet); transform: rotate(-18deg);"></span>
+
+      <span class="eyebrow">Performance · London</span>
+      <span class="half__body">
+        <span class="half__lead">I move</span>
+        <span class="half__word">Dance</span>
+        <span class="pill pill--ink half__cta">See performances →</span>
+      </span>
+    <% end %>
   </div>
-  <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
-    <div class="relative">
-      <%= image_tag 'Highlight1.svg', alt: "highlight", class: "absolute -top-16 -left-10" %>
-    </div>
-    <%= image_tag 'landing-page-laptop-front.png', alt: "Macbook Pro"%>
-    <div class="relative">
-      <%= image_tag 'Highlight2.svg', alt: "highlight 2", class:"absolute -bottom-10 -right-6" %>
-    </div>
-  </div>
-</section>
-
-<!-- How it works -->
-<section class="bg-black text-white sectionSize">
-  <div>
-    <h2 class="secondaryTitle bg-underline2 bg-100%">How I Work</h2>
-  </div>
-  <div class="flex flex-col md:flex-row">
-    <div class="flex-1 mx-8 flex flex-col items-center my-4">
-      <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
-        1
-      </div>
-      <h3 class="font-montserrat font-medium text-xl mb-2">Eat</h3>
-      <p class="text-center font-montserrat">
-
-      </p>
-    </div>
-    <div class="flex-1 mx-8 flex flex-col items-center my-4">
-      <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
-        2
-      </div>
-      <h3 class="font-montserrat font-medium text-xl mb-2">Sleep</h3>
-      <p class="text-center font-montserrat">
-
-      </p>
-    </div>
-    <div class="flex-1 mx-8 flex flex-col items-center my-4">
-      <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
-        3
-      </div>
-      <h3 class="font-montserrat font-medium text-xl mb-2">Code</h3>
-      <p class="text-center font-montserrat">
-
-      </p>
-    </div>
-  </div>
-</section>
-
+</main>

@@ -1,19 +1,15 @@
 class PagesController < ApplicationController
+  layout "two_worlds", only: [:home, :code, :dance]
+
   def home
   end
 
-  def about
+  def code
   end
 
-  def garden
-  end
-
-  def projects
+  def dance
   end
 
   def now
-  end
-
-  def contact
   end
 end

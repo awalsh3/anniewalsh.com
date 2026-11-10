@@ -1,0 +1,89 @@
+<% content_for :title, "Dance" %>
+<% content_for :description, "Annie Walsh dances in London: selected performances including Walk with Amal, the Platinum Jubilee Pageant and the UEFA Champions League Final kick-off show." %>
+
+<header class="wrap site-header">
+  <%= link_to "Annie Walsh", root_path, class: "site-header__name" %>
+  <nav class="site-nav" aria-label="Dance">
+    <a href="#performances">Performances</a>
+    <a href="#contact">Contact</a>
+    <%= link_to "Code →", code_path, class: "pill pill--sm pill--blue" %>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap--tight">
+    <div class="panel dance-hero">
+      <span class="shape" aria-hidden="true" style="left: -100px; top: -100px; width: 340px; height: 340px; border-radius: 50%; background: var(--orange);"></span>
+      <span class="shape" aria-hidden="true" style="right: 80px; bottom: -60px; width: 300px; height: 150px; border-radius: 300px 300px 0 0; background: var(--lilac);"></span>
+
+      <div class="dance-hero__text">
+        <span class="dance-hero__lead">when I’m not coding, I’m</span>
+        <h1>dancing.</h1>
+        <p>Dance has always been a huge part of my life. The stage is where I feel most alive. Here are some of my favourite performances in London.</p>
+      </div>
+
+      <div class="collage" aria-hidden="true">
+        <%= image_tag "two_worlds/uefa.jpg", alt: "", class: "collage__a" %>
+        <%= image_tag "two_worlds/jubilee.jpg", alt: "", class: "collage__b" %>
+        <%= image_tag "two_worlds/amal.jpg", alt: "", class: "collage__c" %>
+      </div>
+    </div>
+  </section>
+
+  <section id="performances" class="wrap performances">
+    <h2 class="display h-section">Selected <span class="serif" style="color: var(--rose-deep);">performances</span></h2>
+
+    <article class="perf">
+      <%= image_tag "two_worlds/amal-2.jpg", alt: "Mass dance performance for Little Amal in London", class: "perf__img" %>
+      <div class="perf__card" style="background: var(--lilac);">
+        <span class="eyebrow" style="font-size: 14px;">Mass dance · London</span>
+        <div>
+          <h3>Walk with Amal</h3>
+          <p>Little Amal, a giant puppet by Handspring Puppet Company, has travelled over 8,000km for displaced children. For her 10th birthday in London, 50+ volunteers rehearsed for four weeks. Choreography by Kenrick ‘H2O’ Sandy, music by Michael ‘Mikey J’ Asante.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="perf perf--flip">
+      <div class="perf__card" style="background: var(--yellow);">
+        <span class="eyebrow" style="font-size: 14px;">2022 · The Mall</span>
+        <div>
+          <h3>Platinum Jubilee Pageant</h3>
+          <p>The celebration of 70 years since Elizabeth II’s accession. A once-in-a-lifetime chance to perform with one of the UK’s most celebrated hip hop dance companies.</p>
+        </div>
+      </div>
+      <%= image_tag "two_worlds/jubilee.jpg", alt: "Performers at the Platinum Jubilee Pageant", class: "perf__img" %>
+    </article>
+
+    <article class="perf">
+      <%= image_tag "two_worlds/uefa.jpg", alt: "Stadium performance at the UEFA Champions League Final kick-off show", class: "perf__img" %>
+      <div class="perf__card" style="background: var(--orange);">
+        <span class="eyebrow" style="font-size: 14px;">Stadium · Wembley</span>
+        <div>
+          <h3>UCL Final Kick-Off Show</h3>
+          <p>Lenny Kravitz headlined the show before the Champions League Final, with 100+ dancers supporting. I was one of them.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="contact" class="wrap--tight" style="padding-top: 48px; padding-bottom: 16px;">
+    <div class="panel dark-cta">
+      <span class="shape" aria-hidden="true" style="right: -90px; top: -90px; width: 300px; height: 300px; border-radius: 50%; background: var(--rose);"></span>
+      <div class="dark-cta__text">
+        <h2 class="display">Let’s <span class="serif" style="color: var(--yellow);">move</span> together.</h2>
+        <p>Choreographers, companies and fellow dancers: I’d love to hear what you’re making.</p>
+      </div>
+      <div class="btn-row">
+        <%= link_to "Instagram", "https://www.instagram.com/annieeewalshhh/", class: "pill pill--rose", target: "_blank", rel: "noopener" %>
+        <%= link_to "LinkedIn", linkedin_url, class: "pill pill--outline-light", target: "_blank", rel: "noopener" %>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap site-footer">
+  <%= link_to "← Home", root_path %>
+  <%= link_to "Over on the other side: Code →", code_path %>
+  <span>© <%= Date.current.year %> Annie Walsh</span>
+</footer>

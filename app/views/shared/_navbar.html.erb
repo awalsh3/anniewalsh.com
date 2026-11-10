@@ -7,10 +7,10 @@
   </div>
   <ul class="font-montserrat items-center hidden md:flex">
     <li class="mx-3 ">
-        <%= link_to "About", about_path, class: "growing-underline" %>
+        <%= link_to "About", code_path(anchor: "about"), class: "growing-underline" %>
     </li>
     <li class="mx-3">
-      <%= link_to "Projects", projects_path, class: "growing-underline" %>
+      <%= link_to "Projects", code_path(anchor: "work"), class: "growing-underline" %>
     </li>
     <li class="mx-3">
       <%= link_to "Now", now_path, class: "growing-underline" %>
@@ -19,7 +19,7 @@
         <%= link_to "CV | Resume", "https://www.linkedin.com/in/annie-walsh-b754706a/",  target: :_blank, class: "growing-underline" %>
     </li>
     <li class="mx-3">
-      <%= link_to "CV | Dance", garden_path, class: "growing-underline" %>
+      <%= link_to "Dance", dance_path, class: "growing-underline" %>
     </li>
   </ul>
   <div id="showMenu" class="md:hidden p-6">
@@ -32,10 +32,10 @@
   </div>
   <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
     <li class="my-6">
-        <%= link_to "About", about_path, class: "growing-underline" %>
+        <%= link_to "About", code_path(anchor: "about"), class: "growing-underline" %>
     </li>
     <li class="my-6">
-      <%= link_to "Projects", projects_path, class: "growing-underline" %>
+      <%= link_to "Projects", code_path(anchor: "work"), class: "growing-underline" %>
     </li>
     <li class="my-6">
       <%= link_to "Now", now_path, class: "growing-underline" %>
@@ -44,7 +44,7 @@
       <%= link_to "CV | Resume", "https://www.linkedin.com/in/annie-walsh-b754706a/",  target: :_blank, class: "growing-underline" %>
     </li>
     <li class="my-6">
-      <%= link_to "CV | Dance", garden_path, class: "growing-underline" %>
+      <%= link_to "Dance", dance_path, class: "growing-underline" %>
     </li>
   </ul>
 </div>
