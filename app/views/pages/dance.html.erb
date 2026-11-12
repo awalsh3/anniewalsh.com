@@ -36,9 +36,9 @@
     <article class="perf">
       <%= image_tag "two_worlds/amal-2.jpg", alt: "Mass dance performance for Little Amal in London", class: "perf__img" %>
       <div class="perf__card" style="background: var(--orange);">
-        <span class="eyebrow" style="font-size: 14px;">Mass dance · London</span>
+        <span class="eyebrow" style="font-size: 14px;">Good Chance Theatre · Trafalgar Square</span>
         <div>
-          <h3>Walk with Amal</h3>
+          <h3><%= link_to "The Walk (Little Amal)", "https://www.walkwithamal.org/", target: "_blank", rel: "noopener" %></h3>
           <p>Little Amal, a giant puppet by Handspring Puppet Company, has travelled over 8,000km for displaced children. For her 10th birthday in London, 50+ volunteers rehearsed for four weeks. Choreography by Kenrick ‘H2O’ Sandy, music by Michael ‘Mikey J’ Asante.</p>
         </div>
       </div>
@@ -46,9 +46,9 @@
 
     <article class="perf perf--flip">
       <div class="perf__card" style="background: var(--yellow);">
-        <span class="eyebrow" style="font-size: 14px;">2022 · The Mall</span>
+        <span class="eyebrow" style="font-size: 14px;">Boy Blue · Buckingham Palace</span>
         <div>
-          <h3>Platinum Jubilee Pageant</h3>
+          <h3><%= link_to "Platinum Jubilee Pageant", "https://s3.amazonaws.com/media.onething.org/video/Boy+Blue+-+Stage.mp4", target: "_blank", rel: "noopener" %></h3>
           <p>The celebration of 70 years since Elizabeth II’s accession. A once-in-a-lifetime chance to perform with one of the UK’s most celebrated hip hop dance companies.</p>
         </div>
       </div>
@@ -58,20 +58,20 @@
     <article class="perf">
       <%= image_tag "two_worlds/uefa.jpg", alt: "Stadium performance at the UEFA Champions League Final kick-off show", class: "perf__img" %>
       <div class="perf__card" style="background: var(--lilac);">
-        <span class="eyebrow" style="font-size: 14px;">Stadium · Wembley</span>
+        <span class="eyebrow" style="font-size: 14px;">Fatima Robinson · Wembley Stadium</span>
         <div>
-          <h3>UCL Final Kick-Off Show</h3>
-          <p>Lenny Kravitz headlined the show before the Champions League Final, with 100+ dancers supporting. I was one of them.</p>
+          <h3><%= link_to "UEFA Champions League Final", "https://www.youtube.com/watch?v=7V6p8G0BRCw", target: "_blank", rel: "noopener" %></h3>
+          <p>Rock icon Lenny Kravitz headlined an unforgettable performance in London at the UEFA Champions League Final Kick Off Show presented by Pepsi.</p>
         </div>
       </div>
     </article>
 
     <article class="perf perf--flip">
       <div class="perf__card" style="background: var(--pink);">
-        <span class="eyebrow" style="font-size: 14px;">Teaching · Weekly classes</span>
+        <span class="eyebrow" style="font-size: 14px;">Teaching · Uptop Dance School</span>
         <div>
-          <h3>Uptop Dance School</h3>
-          <p>I taught two weekly classes, for <span style="white-space: nowrap;">4–5</span> year olds and <span style="white-space: nowrap;">6–9</span> year olds, and brought them to the stage for an end-of-year performance and a flash mob.</p>
+          <h3><%= link_to "Children's Instructor & Choreographer", "https://youtu.be/EqeQYKM5Iv8?si=oXnI05S-lLjNgogg&t=200", target: "_blank", rel: "noopener" %></h3>
+          <p> I led two weekly hip-hop classes for dancers ages <span style="white-space: nowrap;">4–5</span> and <span style="white-space: nowrap;">6–9</span>, building their foundational skills and choreographing original routines for the end-of-year recital. I also helped facilitate and lead a high-energy flash mob featuring the entire school. </p>
         </div>
       </div>
       <div class="perf__img" aria-hidden="true">
@@ -84,12 +84,11 @@
     <div class="panel dark-cta">
       <span class="shape" aria-hidden="true" style="right: -90px; top: -90px; width: 300px; height: 300px; border-radius: 50%; background: var(--rose);"></span>
       <div class="dark-cta__text">
-        <h2 class="display">Let’s <span class="serif" style="color: var(--yellow);">move</span> together.</h2>
-        <p>Choreographers, companies and fellow dancers: I’d love to hear what you’re making.</p>
+        <h2 class="display">Dance <span class="serif" style="color: var(--yellow);">and</span> code?</h2>
+        <p>It’s a rare mix, and I’d love to use it. If you’re making a performance that needs a digital side, or a digital project that needs to move, let’s talk.</p>
       </div>
       <div class="btn-row">
-        <%= link_to "Instagram", "https://www.instagram.com/annieeewalshhh/", class: "pill pill--rose", target: "_blank", rel: "noopener" %>
-        <%= link_to "LinkedIn", linkedin_url, class: "pill pill--outline-light", target: "_blank", rel: "noopener" %>
+        <%= link_to "Let’s talk", linkedin_url, class: "pill pill--outline-light", target: "_blank", rel: "noopener", aria: { label: "Let’s talk on LinkedIn (opens in a new tab)" } %>
       </div>
     </div>
   </section>

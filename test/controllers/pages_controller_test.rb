@@ -13,7 +13,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "h1", /The code is the/
     assert_select ".service", 3
-    assert_select ".work-row", 6
+    assert_select ".work-row", ApplicationController.helpers.code_projects.size
   end
 
   test "dance page renders performances" do
