@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects: old Rails URLs → new pages
+/about     /code#about  301
+/projects  /code#work   301
+/contact   /code        301
+/garden    /dance       301
